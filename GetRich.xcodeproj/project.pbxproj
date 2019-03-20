@@ -18,6 +18,16 @@
 		63F176352242EA260042FA2E /* StockInformation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63F176332242EA260042FA2E /* StockInformation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		63F1763E2242EF100042FA2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63F1763A2242EF0F0042FA2E /* StockInformation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 635613192242A40C00C3F8F1;
+			remoteInfo = StockInformation;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		630FDFE92242B125007B778C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -39,12 +49,12 @@
 		630FDFD52242B0BF007B778C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		630FDFD72242B0BF007B778C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		630FDFDD2242B0F1007B778C /* StockTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewController.swift; sourceTree = "<group>"; };
-		630FDFDF2242B108007B778C /* StockInformation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StockInformation.xcodeproj; path = ../../StockInformation/StockInformation.xcodeproj; sourceTree = "<group>"; };
 		63F176152242BF130042FA2E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		63F176242242E0B80042FA2E /* StockPricerMLModel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StockPricerMLModel+Extension.swift"; sourceTree = "<group>"; };
 		63F1762A2242E40C0042FA2E /* CreateStockMLModel.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CreateStockMLModel.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		63F176312242E9F70042FA2E /* StockPricerMLModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = StockPricerMLModel.mlmodel; sourceTree = "<group>"; };
 		63F176332242EA260042FA2E /* StockInformation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StockInformation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F1763A2242EF0F0042FA2E /* StockInformation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StockInformation.xcodeproj; path = StockInformation/StockInformation.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +74,6 @@
 			children = (
 				63F176332242EA260042FA2E /* StockInformation.framework */,
 				63F176272242E3E30042FA2E /* Create Stock Model */,
-				63F176262242E3D60042FA2E /* Stock Information */,
 				630FDFCA2242B0BE007B778C /* GetRich */,
 				630FDFC92242B0BE007B778C /* Products */,
 			);
@@ -81,6 +90,7 @@
 		630FDFCA2242B0BE007B778C /* GetRich */ = {
 			isa = PBXGroup;
 			children = (
+				63F1763A2242EF0F0042FA2E /* StockInformation.xcodeproj */,
 				63F176312242E9F70042FA2E /* StockPricerMLModel.mlmodel */,
 				63F176232242E0A80042FA2E /* Extension */,
 				630FDFCB2242B0BE007B778C /* AppDelegate.swift */,
@@ -101,20 +111,20 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		63F176262242E3D60042FA2E /* Stock Information */ = {
-			isa = PBXGroup;
-			children = (
-				630FDFDF2242B108007B778C /* StockInformation.xcodeproj */,
-			);
-			path = "Stock Information";
-			sourceTree = "<group>";
-		};
 		63F176272242E3E30042FA2E /* Create Stock Model */ = {
 			isa = PBXGroup;
 			children = (
 				63F1762A2242E40C0042FA2E /* CreateStockMLModel.playground */,
 			);
 			path = "Create Stock Model";
+			sourceTree = "<group>";
+		};
+		63F1763B2242EF0F0042FA2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63F1763F2242EF100042FA2E /* StockInformation.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,12 +174,28 @@
 			mainGroup = 630FDFBF2242B0BE007B778C;
 			productRefGroup = 630FDFC92242B0BE007B778C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 63F1763B2242EF0F0042FA2E /* Products */;
+					ProjectRef = 63F1763A2242EF0F0042FA2E /* StockInformation.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				630FDFC72242B0BE007B778C /* GetRich */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		63F1763F2242EF100042FA2E /* StockInformation.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = StockInformation.framework;
+			remoteRef = 63F1763E2242EF100042FA2E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		630FDFC62242B0BE007B778C /* Resources */ = {
